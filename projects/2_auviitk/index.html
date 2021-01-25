@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Vivek Gopalakrishnan</title>
+  <title>Vivek Gopalakrishnan | Autonomous Underwater Vehicle (AUV)</title>
   <meta name="description" content="A simple website for a Bio + ML enthusiast.
 ">
 
@@ -19,7 +19,7 @@
 
 
   <link rel="stylesheet" href="https://vivekg.dev/assets/css/main.css">
-  <link rel="canonical" href="https://vivekg.dev/blog/">
+  <link rel="canonical" href="https://vivekg.dev/projects/2_auviitk/">
 </head>
 
   <body>
@@ -76,35 +76,54 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- <div class="header-bar">
-  <h1></h1>
-  <h2></h2>
-</div> -->
+        <div class="post">
 
-<ul class="post-list">
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/ros-tips/">Useful Tips for ROS Users</a></h2>
-      <p class="post-meta">November 7, 2017</p>
-      <p>Getting past a beginner's understanding of ROS quickly and properly.</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/robotics-club/">Robotics Club: Why it exists?</a></h2>
-      <p class="post-meta">September 12, 2017</p>
-      <p>A few important reasons why student community groups help in moulding a scientific mind.</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/hello-world/">Hello World!</a></h2>
-      <p class="post-meta">August 2, 2017</p>
-      <p>A mandatory post where I introduce myself and the purpose of the blog section.</p>
-    </li>
-  
-</ul>
+  <header class="post-header">
+    <h1 class="post-title">Autonomous Underwater Vehicle (AUV)</h1>
+    <h5 class="post-description">Funded by DoRD, IIT Kanpur</h5>
+  </header>
 
+  <article class="post-content Autonomous Underwater Vehicle (AUV) clearfix">
+    <p><em>Duration:</em> November’14 - June’18</p>
 
+<p><em>Supervisors:</em> <a href="https://www.iitk.ac.in/aero/mangal/">Prof. Mangal Kothari</a>, <a href="http://home.iitk.ac.in/~venkats/">Prof. K. S. Venkatesh</a></p>
 
+<p>As a student- initiated project at IIT Kanpur, the project aims to build marine systems to serve as a platform for research on underwater robotics in the institute and create affliations with industries looking for marine technology solutions. As one of the founding members of the team, I contributed towards various mechanical, electrical and software aspects of the project.</p>
+
+<p>We participated with our first vehicle, <em>Varun</em>, at the <strong>National Student Autonomous Vehicle (SAVe) Competition</strong> in December 2016, and achieved the runners-up position on our debut.</p>
+
+<p align="center">
+    <a class="button" href="" target="_blank">View Code</a>
+    <a class="button" href="http://auviitk.com/" target="_blank">Visit Website </a>
+</p>
+
+<h3 id="mechanical-work">Mechanical Work</h3>
+
+<p>Compared to other robotic systems, in AUVs we need to seal the robot enclosures for protection against water. The recommended ingress protection is referred to IP68 (or above) for all the enclosures. Failure to meet this requirement could lead to damaging of the electronics. In our vehicle <em>Varun</em>, we used O-rings and marine-grade expoxy for sealing.</p>
+
+<p>Varun’s mechanical design comprises of an aluminum structural frame, enclosures for electronics and cameras, pneumatic system and electromagnetic actuators. The vehicle has 5 degrees of freedom and roll is stabilized by ensuring a symmetric design. I designed the main pressure hull and other casings, along with the marker dropper. All mechanical parts were first designed on Solidworks and then optimized for weight and structural strength using Ansys Workbench. Their fabrication was done using in-house available facilities at the institute.</p>
+
+<div>
+    <img class="col three" height="50%" width="50%" src="/assets/img/projects/auv/auv_labelled.png" alt="" title="Design of AUV Varun" />
+</div>
+
+<h3 id="electrical-work">Electrical Work</h3>
+
+<p>The vehicle is powered using Lithium Polymer batteries. I designed a power distribution board, comprising of buck and boost converters, to meet the different voltage and power requirements of various electonic components. I used off-the-shelf motor drivers to control brushed DC actuators through an Atmega microcontroller, and also worked on intergating the sensors with ROS.</p>
+
+<div>
+    <img class="col three" height="50%" width="50%" src="/assets/img/projects/auv/electrical_schematic.png" alt="" title="Design of AUV Varun" />
+</div>
+
+<h3 id="software-work">Software Work</h3>
+
+<p>The Software Architecture is based on the Robot Operating System (ROS) framework. We dvided the entire software stack into motion planning, controls, navigation and vision layers. I contributed mainly to the controls and navigation aspects of the vehicle. The code is open sourced and can be viewed over <a href="https://github.com/auv-iitk/">here</a>.</p>
+
+  </article>
+
+  
+
+</div>
 
       </div>
     </div>
